@@ -1,0 +1,31 @@
+{
+    "name": "nbo/ajaxbundle",
+    "description": "This bundle provide a simple way to use Ajax request.",
+    "type": "symfony-bundle",
+    "authors": [{
+            "name": "Nicolas BONNEAU",
+            "email": "nicolas.bonneau.vlb@gmail.com"
+        }],
+    "keywords": [
+        "ajax bundle"
+    ],
+    "license": [
+        "MIT"
+    ],
+    "require": {
+    },
+    "autoload": {
+        "psr-0": {
+            "NBO\\Bundle\\AjaxBundle": ""
+        }
+    },
+    "target-dir": "NBO/Bundle/AjaxBundle",
+    "repositories": [{
+            
+        }],
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0"
+        }
+    }
+}

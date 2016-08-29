@@ -1,0 +1,14 @@
+
+parameters:
+    ajax_request.class: NBO\Bundle\AjaxBundle\Service\AjaxRequestService
+    
+services:
+    ajax_request:
+        class:    "%ajax_request.class%"
+        arguments:    [@kernel]
+        
+    app.tokens.action_listener:
+        class: NBO\Bundle\AjaxBundle\EventListener\AjaxControllerListener
+        arguments: []
+        tags:
+            - { name: kernel.event_listener, event: kernel.controller, method: onKernelController }
